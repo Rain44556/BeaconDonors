@@ -44,7 +44,7 @@
   <!-- navbar -->
   <header class="sticky top-0 z-50 backdrop-blur">
     <div class="navbar bg-navBgcolor p-6">
-      <div class="hidden navbar-start flex">
+      <div class="hidden lg:flex navbar-start flex">
         <a class="btn bg-primaryColor fontLexend font-semibold text-xl w-36">Blog <img src="./images/bus-icon.png"
             alt=""></a>
       </div>
@@ -80,7 +80,7 @@
           <div>
 
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
-                alt="" class="w-6 rounded-full bg-black"><div id="quota-injured-donation-addMoney">123</div> BDT</div>
+                alt="" class="w-6 rounded-full bg-black"><div id="quota-injured-donation-addMoney">250</div> BDT</div>
 
             <h1 class="text-xl font-bold fontLexend">Aid for Injured in the Quota Movement</h1>
             <p class="py-3 fontLexend">
@@ -94,8 +94,23 @@
               <input id="quota-injured-donation-input" type="text" placeholder="Write Your Donation Amount"
                 class="input input-bordered" autocomplete="off" />
             </div>
-            <button id="btn-quota-injured" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
+            <button id="btn-quota-injured" class="btn bg-primaryColor w-full fontLexend font-bold text-base" onclick="my_modal.showModal()">Donate
               Now</button>
+              <!-- Open the modal using ID.showModal() method -->
+
+<dialog id="my_modal" class="modal">
+  <div class="modal-box">
+    <h3 class="text-lg font-bold">Hello!</h3>
+    <p class="py-4">Press ESC key or click the button below to close</p>
+    <div class="modal-action">
+      <form method="dialog">
+        <!-- if there is a button in form, it will close the modal -->
+        <button class="btn">Close</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+              
           </div>
         </div>
       </div>
@@ -105,8 +120,9 @@
         <div class="hero-content flex-col lg:flex-row">
           <img src="./images/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <button class="btn m-3 fontLexend font-semibold text-base w-36 bg-gray-200"> <img src="./images/coin.png"
-                alt="" class="w-6 rounded-full bg-black">0 BDT</button>
+            <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
+              alt="" class="w-6 rounded-full bg-black"><div id="noakhali-donation-addMoney">300</div> BDT</div>
+
             <h1 class="text-xl font-bold fontLexend">Donate for flood at Noakhali, Bangladesh</h1>
             <p class="py-3 fontLexend">
               Donating to support Noakhali can make a large difference by assisting in the reconstruction of the lives
@@ -115,7 +131,7 @@
               clothing, blankets, and hygiene goods are also important and valuable.
             </p>
             <div class="form-control mb-2">
-              <input id="noakhali-donation" type="text" placeholder="Write Your Donation Amount"
+              <input id="noakhali-donation-input" type="text" placeholder="Write Your Donation Amount"
                 class="input input-bordered" autocomplete="off" />
             </div>
             <button id="btn-noakhali" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
@@ -129,8 +145,9 @@
         <div class="hero-content flex-col lg:flex-row">
           <img src="./images/cumilla.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <button class="btn m-3 fontLexend font-semibold text-base w-36 bg-gray-200"> <img src="./images/coin.png"
-                alt="" class="w-6 rounded-full bg-black">0 BDT</button>
+            <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
+              alt="" class="w-6 rounded-full bg-black"><div id="comilla-donation-addMoney">100</div> BDT</div>
+
             <h1 class="text-xl font-bold fontLexend">Donate for flood at Comilla, Bangladesh</h1>
             <p class="py-2 fontLexend">
               Floods have displaced thousands of families, damaged homes, and destroyed livelihoods in Comilla,
@@ -141,7 +158,7 @@
               victims hope and aid.
             </p>
             <div class="form-control mb-2">
-              <input id="comilla-donation" type="text" placeholder="Write Your Donation Amount"
+              <input id="comilla-donation-input" type="text" placeholder="Write Your Donation Amount"
                 class="input input-bordered" autocomplete="off" />
             </div>
             <button id="btn-comilla" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
@@ -156,8 +173,9 @@
         <div class="hero-content flex-col lg:flex-row">
           <img src="./images/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-            <button class="btn m-3 fontLexend font-semibold text-base w-36 bg-gray-200"> <img src="./images/coin.png"
-                alt="" class="w-6 rounded-full bg-black">0 BDT</button>
+            <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
+              alt="" class="w-6 rounded-full bg-black"><div id="feni-donation-addMoney">500</div> BDT</div>
+
             <h1 class="text-xl font-bold fontLexend">Donate for flood at Feni, Bangladesh</h1>
             <p class="py-3 fontLexend">
               Feni, Bangladesh has been ravaged by severe flooding, which has resulted in the displacement of families,
@@ -167,7 +185,7 @@
               natural tragedy is the goal of every contribution.
             </p>
             <div class="form-control mb-2">
-              <input id="feni-donation" type="text" placeholder="Write Your Donation Amount"
+              <input id="feni-donation-input" type="text" placeholder="Write Your Donation Amount"
                 class="input input-bordered" autocomplete="off" />
             </div>
             <button id="btn-feni" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate Now</button>
@@ -182,7 +200,7 @@
 
 <!-- js file -->
 <script src="js/main.js"></script>
-<script src="js/donation.js"></script>
 <script src="js/utilities.js"></script>
+<script src="js/donation.js"></script>
 
 </html>
