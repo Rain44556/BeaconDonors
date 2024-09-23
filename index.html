@@ -40,8 +40,7 @@
 </head>
 
 <body>
-
-  <!-- navbar -->
+  <!---------------------------------------- navbar ------------------------------------>
   <header class="sticky top-0 z-50 backdrop-blur">
     <div class="navbar bg-navBgcolor p-6">
       <div class="hidden lg:flex navbar-start flex">
@@ -66,11 +65,10 @@
       <button
         class="btn m-3 border-solid border-2 border-gray-200 rounded-lg bg-white fontLexend font-semibold text-lg w-36">History</button>
     </div>
-
   </header>
 
   <main>
-<!-- donation information -->
+    <!-- donation information -->
     <section class="donate-info">
 
       <!-------------------- quota-injured-donation ------------------->
@@ -78,10 +76,10 @@
         <div class="hero-content flex-col lg:flex-row">
           <img src="./images/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
-
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
-                alt="" class="w-6 rounded-full bg-black"><div id="quota-injured-donation-addMoney">250</div> BDT</div>
-
+                alt="" class="w-6 rounded-full bg-black">
+              <div id="quota-injured-donation-addMoney">250</div> BDT
+            </div>
             <h1 class="text-xl font-bold fontLexend">Aid for Injured in the Quota Movement</h1>
             <p class="py-3 fontLexend">
               The injured must receive aid in this movement for recovery purposes. Affected people need first aid,
@@ -94,25 +92,25 @@
               <input id="quota-injured-donation-input" type="text" placeholder="Write Your Donation Amount"
                 class="input input-bordered" autocomplete="off" />
             </div>
-            <button id="btn-quota-injured" class="btn bg-primaryColor w-full fontLexend font-bold text-base" onclick="my_modal.showModal()">Donate
+            <button id="btn-quota-injured" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
               Now</button>
-              <!-- Open the modal using ID.showModal() method -->
+            <!------------------------ modal ------------------>
+            <dialog id="my_modal" class="modal">
+              <div class="modal-box text-center">
+                <h1 class="text-3xl font-bold fontLexend m-3">Congrates!</h1>
+                <div class="flex justify-center"><img class="w-10" src="./images/coin.png" alt=""></div>
+                <p class="text-base fontLexend m-3">You Have Donated for Humankind</p>
+                <h3 class="text-xl font-bold fontLexend">Successfully</h3>
+                <form method="dialog">
+                  <button class="btn m-5">Close confirmation</button>
+                </form>
 
-<dialog id="my_modal" class="modal">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
-    <div class="modal-action">
-      <form method="dialog">
-        <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
-      </form>
-    </div>
-  </div>
-</dialog>
-              
+              </div>
+            </dialog>
+
           </div>
         </div>
+      </div>
       </div>
 
       <!----------------- noakhali-donation ------------------>
@@ -121,7 +119,9 @@
           <img src="./images/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
-              alt="" class="w-6 rounded-full bg-black"><div id="noakhali-donation-addMoney">300</div> BDT</div>
+                alt="" class="w-6 rounded-full bg-black">
+              <div id="noakhali-donation-addMoney">300</div> BDT
+            </div>
 
             <h1 class="text-xl font-bold fontLexend">Donate for flood at Noakhali, Bangladesh</h1>
             <p class="py-3 fontLexend">
@@ -136,6 +136,19 @@
             </div>
             <button id="btn-noakhali" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
               Now</button>
+            <!------------------------ modal ------------------>
+            <dialog id="my_modal" class="modal">
+              <div class="modal-box text-center">
+                <h1 class="text-3xl font-bold fontLexend m-3">Congrates!</h1>
+                <div class="flex justify-center"><img class="w-10" src="./images/coin.png" alt=""></div>
+                <p class="text-base fontLexend m-3">You Have Donated for Humankind</p>
+                <h3 class="text-xl font-bold fontLexend">Successfully</h3>
+                <form method="dialog">
+                  <button class="btn m-5">Close confirmation</button>
+                </form>
+
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
@@ -146,7 +159,9 @@
           <img src="./images/cumilla.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
-              alt="" class="w-6 rounded-full bg-black"><div id="comilla-donation-addMoney">100</div> BDT</div>
+                alt="" class="w-6 rounded-full bg-black">
+              <div id="comilla-donation-addMoney">100</div> BDT
+            </div>
 
             <h1 class="text-xl font-bold fontLexend">Donate for flood at Comilla, Bangladesh</h1>
             <p class="py-2 fontLexend">
@@ -163,6 +178,18 @@
             </div>
             <button id="btn-comilla" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
               Now</button>
+            <!------------------------ modal ------------------>
+            <dialog id="my_modal" class="modal">
+              <div class="modal-box text-center">
+                <h1 class="text-3xl font-bold fontLexend m-3">Congrates!</h1>
+                <div class="flex justify-center"><img class="w-10" src="./images/coin.png" alt=""></div>
+                <p class="text-base fontLexend m-3">You Have Donated for Humankind</p>
+                <h3 class="text-xl font-bold fontLexend">Successfully</h3>
+                <form method="dialog">
+                  <button class="btn m-5">Close confirmation</button>
+                </form>
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
@@ -174,7 +201,9 @@
           <img src="./images/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
-              alt="" class="w-6 rounded-full bg-black"><div id="feni-donation-addMoney">500</div> BDT</div>
+                alt="" class="w-6 rounded-full bg-black">
+              <div id="feni-donation-addMoney">500</div> BDT
+            </div>
 
             <h1 class="text-xl font-bold fontLexend">Donate for flood at Feni, Bangladesh</h1>
             <p class="py-3 fontLexend">
@@ -189,6 +218,19 @@
                 class="input input-bordered" autocomplete="off" />
             </div>
             <button id="btn-feni" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate Now</button>
+            <!------------------------ modal ------------------>
+            <dialog id="my_modal" class="modal">
+              <div class="modal-box text-center">
+                <h1 class="text-3xl font-bold fontLexend m-3">Congrates!</h1>
+                <div class="flex justify-center"><img class="w-10" src="./images/coin.png" alt=""></div>
+                <p class="text-base fontLexend m-3">You Have Donated for Humankind</p>
+                <h3 class="text-xl font-bold fontLexend">Successfully</h3>
+                <form method="dialog">
+                  <button class="btn m-5">Close confirmation</button>
+                </form>
+
+              </div>
+            </dialog>
           </div>
         </div>
       </div>
