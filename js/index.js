@@ -30,7 +30,7 @@
         const div = document.createElement('div');
         div.innerHTML = `
         <div class="lg:w-1/2 border-2 border-solid m-8 p-5">
-        <h1 class="text-base font-semibold fontLexend">${addDonation} Taka is Donated for ${titleDistrict} </h1>
+        <h1 class="text-base font-semibold fontLexend">${donationAmount} Taka is Donated for ${titleDistrict} </h1>
         <p class="text-xs text-gray-700 font-light fontLexend">Date: ${Date()} </p>
         </div>`
         
