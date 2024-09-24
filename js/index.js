@@ -1,7 +1,7 @@
 
  function addClickListener(buttonId, inputId, donationId,titleId){
-    document.getElementById(buttonId).addEventListener('click', function(event){
-        event.preventDefault();
+    document.getElementById(buttonId).addEventListener('click', function(){
+        // event.preventDefault();
     
         //------------------------ donation -----------------------
         const donationAmount = getInputValueById(inputId);
@@ -25,13 +25,15 @@
         // modal
         document.getElementById("my_modal").showModal();
 
-
         // --------------history----------
         const titleDistrict = getTitleById(titleId);
         const div = document.createElement('div');
         div.innerHTML = `
-        <h1 class = "w-1/2 text-base font-semibold fontLexend border-2 border-solid m-8 p-5">${addDonation} Taka is Donated for ${titleDistrict} </h1>
-        <p> </p>`
+        <div class="w-1/2 border-2 border-solid m-8 p-5">
+        <h1 class="text-base font-semibold fontLexend">${addDonation} Taka is Donated for ${titleDistrict} </h1>
+        <p class="text-xs text-gray-700 font-light fontLexend">Date: ${Date()} </p>
+        </div>`
+        
         document.getElementById('history-info').appendChild(div);
     });
 }

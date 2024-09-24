@@ -22,3 +22,25 @@ function getTitleById(id){
     const title = document.getElementById(id).innerText;
     return title;
 }
+
+// button-functionality
+
+const historySection = document.getElementById('btn-history');
+const donationSection = document.getElementById('btn-donation');
+
+historySection.addEventListener('click',function(){
+    historySection.classList.add(
+        "bg-primaryColor",
+        "fontLexend",
+        "font-semibold",
+        "text-lg",
+    );
+    historySection.classList.remove("bg-white");
+    donationSection.classList.remove(   
+        "bg-primaryColor",
+        "fontLexend",
+        "font-semibold",
+        "text-lg",
+    );
+    donationSection.classList.add("bg-white");
+})
