@@ -12,3 +12,13 @@ function getInnerTextValueById(id){
     return inputInNum;
 }
 
+function getSectionById(id){
+document.getElementById('donate-info').classList.add('hidden');
+document.getElementById('history-info').classList.add('hidden');
+document.getElementById(id).classList.remove('hidden');
+}
+
+function getTitleById(id){
+    const title = document.getElementById(id).innerText;
+    return title;
+}

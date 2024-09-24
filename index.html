@@ -60,27 +60,26 @@
     </div>
 
     <!-- donation history button -->
-    <div class="flex justify-center m-3">
+    <div class="flex justify-center m-3 ">
       <button id="btn-donation" class="btn m-3 bg-primaryColor fontLexend font-semibold text-lg w-36">Donation</button>
-      <button
-        class="btn m-3 border-solid border-2 border-gray-200 rounded-lg bg-white fontLexend font-semibold text-lg w-36">History</button>
+      <button id="btn-history" class="btn m-3 border-solid border-2 border-gray-200 rounded-lg bg-white fontLexend font-semibold text-lg w-36">History</button>
     </div>
   </header>
 
   <main>
     <!-- donation information -->
-    <section class="donate-info">
+    <div id="donate-info">
 
       <!-------------------- quota-injured-donation ------------------->
       <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
           <img src="./images/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
                 alt="" class="w-6 rounded-full bg-black">
               <div id="quota-injured-donation-addMoney">250</div> BDT
             </div>
-            <h1 class="text-xl font-bold fontLexend">Aid for Injured in the Quota Movement</h1>
+            <h1 id="title-quota" class="text-xl font-bold fontLexend">Aid for Injured in the Quota Movement</h1>
             <p class="py-3 fontLexend">
               The injured must receive aid in this movement for recovery purposes. Affected people need first aid,
               hospitalization, and psychiatric support. Such relief is generally led by NGOs, medical institutions, and
@@ -111,11 +110,10 @@
           </div>
         </div>
       </div>
-      </div>
 
       <!----------------- noakhali-donation ------------------>
       <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
           <img src="./images/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
@@ -123,7 +121,7 @@
               <div id="noakhali-donation-addMoney">300</div> BDT
             </div>
 
-            <h1 class="text-xl font-bold fontLexend">Donate for flood at Noakhali, Bangladesh</h1>
+            <h1 class="text-xl font-bold fontLexend">Donate for <span  id="title-noakhali">flood at Noakhali, Bangladesh</span></h1>
             <p class="py-3 fontLexend">
               Donating to support Noakhali can make a large difference by assisting in the reconstruction of the lives
               of individuals who have been impacted. Not only are monetary contributions able to be directed toward
@@ -155,7 +153,7 @@
 
       <!-------------------- comilla-donation ------------------->
       <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
           <img src="./images/cumilla.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
@@ -163,7 +161,7 @@
               <div id="comilla-donation-addMoney">100</div> BDT
             </div>
 
-            <h1 class="text-xl font-bold fontLexend">Donate for flood at Comilla, Bangladesh</h1>
+            <h1 class="text-xl font-bold fontLexend">Donate for <span id="title-comilla">flood at Comilla, Bangladesh</span></h1>
             <p class="py-2 fontLexend">
               Floods have displaced thousands of families, damaged homes, and destroyed livelihoods in Comilla,
               Bangladesh. Food and clean water shortages have resulted from flooding submerging highways and
@@ -197,7 +195,7 @@
 
       <!-------------------- Feni-donation ------------------->
       <div class="hero">
-        <div class="hero-content flex-col lg:flex-row">
+        <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
           <img src="./images/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
@@ -205,7 +203,7 @@
               <div id="feni-donation-addMoney">500</div> BDT
             </div>
 
-            <h1 class="text-xl font-bold fontLexend">Donate for flood at Feni, Bangladesh</h1>
+            <h1 class="text-xl font-bold fontLexend">Donate for <span id="title-feni">flood at Feni, Bangladesh</span></h1>
             <p class="py-3 fontLexend">
               Feni, Bangladesh has been ravaged by severe flooding, which has resulted in the displacement of families,
               the destruction of homes, and the cutsoff of crucial services. Your donations have the potential to give
@@ -235,14 +233,26 @@
         </div>
       </div>
 
-    </section>
-  </main>
+    </div>
 
+
+    <!------------------- history-info ------------------------->
+    <div id="history-info" class="hidden">
+    </div>
+
+</div>
+  </main>
 </body>
+
+<footer>
+  <div class="bg-navBgcolor p-14 mt-10">
+  </div>
+</footer>
 
 <!-- js file -->
 <script src="js/main.js"></script>
 <script src="js/utilities.js"></script>
 <script src="js/donation.js"></script>
+<script src="js/showSection.js"></script>
 
 </html>
