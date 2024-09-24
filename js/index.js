@@ -10,7 +10,7 @@
 
         // alert
         if(isNaN(donationAmount) || donationAmount < 0 || mainBalance < donationAmount){
-            alert("Failed to add amount");
+            alert("Invalid Donation amount");
             return;
         }
      

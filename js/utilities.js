@@ -29,18 +29,19 @@ const historySection = document.getElementById('btn-history');
 const donationSection = document.getElementById('btn-donation');
 
 historySection.addEventListener('click',function(){
-    historySection.classList.add(
-        "bg-primaryColor",
-        "fontLexend",
-        "font-semibold",
-        "text-lg",
-    );
-    historySection.classList.remove("bg-white");
-    donationSection.classList.remove(   
-        "bg-primaryColor",
-        "fontLexend",
-        "font-semibold",
-        "text-lg",
-    );
+    historySection.classList.add("bg-primaryColor",);
+    donationSection.classList.remove("bg-primaryColor");
+
     donationSection.classList.add("bg-white");
-})
+    historySection.classList.remove("bg-white");
+});
+
+donationSection.addEventListener('click',function(){
+    donationSection.classList.add("bg-primaryColor");
+    historySection.classList.remove("bg-primaryColor",);
+
+    historySection.classList.add("bg-white");
+    donationSection.classList.remove("bg-white");
+});
+
+
