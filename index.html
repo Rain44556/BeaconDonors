@@ -26,8 +26,6 @@
           colors: {
             primaryColor: '#B4F461',
             navBgcolor: '#F9F7F3',
-            secondaryColor: '',
-
           },
           fontFamily: {
             fontLexend: 'Lexend',
@@ -47,7 +45,7 @@
         <button id="btn-blog-page" class="btn bg-primaryColor fontLexend font-semibold text-xl w-36">Blog</button>
       </div>
 
-      <div class="">
+      <div class="hidden lg:flex">
         <img src="./images/logo.png" alt="" class="w-10 rounded-full bg-black">
         <a class="fontLexend m-3 text-lg font-semibold">BeaconDonors</a>
       </div>
@@ -72,25 +70,25 @@
       <!-------------------- quota-injured-donation ------------------->
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
-          <img src="./images/quota-protest.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <img src="./images/quota-protest.png" class="lg:max-w-sm max-w-xs rounded-lg shadow-xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
                 alt="" class="w-6 rounded-full bg-black">
               <div id="quota-injured-donation-addMoney">250</div> BDT
             </div>
             <h1 id="title-quota" class="text-xl font-bold fontLexend">Aid for Injured in the Quota Movement</h1>
-            <p class="py-3 fontLexend">
+            <p class="py-3 fontLexend ">
               The injured must receive aid in this movement for recovery purposes. Affected people need first aid,
               hospitalization, and psychiatric support. Such relief is generally led by NGOs, medical institutions, and
               humanitarian groups. Urgent care and long-term rehabilitation are needed for many protest wounds. Funding
               for medical supplies, hospital fees, and rehabilitation programs for long-term injuries requires
               donations. To protect their right to protest, demonstrators need legal aid.
             </p>
-            <div class="form-control mb-2">
+            <div class="form-control mb-2 ">
               <input id="quota-injured-donation-input" type="text" placeholder="Write Your Donation Amount"
                 class="input input-bordered" autocomplete="off" />
             </div>
-            <button id="btn-quota-injured" class="btn bg-primaryColor w-full fontLexend font-bold text-base">Donate
+            <button id="btn-quota-injured" class="btn  bg-primaryColor w-full fontLexend font-bold text-base">Donate
               Now</button>
             <!------------------------ modal ------------------>
             <dialog id="my_modal" class="modal">
@@ -113,7 +111,7 @@
       <!----------------- noakhali-donation ------------------>
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
-          <img src="./images/noakhali.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <img src="./images/noakhali.png" class="lg:max-w-sm max-w-xs rounded-lg shadow-xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
                 alt="" class="w-6 rounded-full bg-black">
@@ -153,7 +151,7 @@
       <!-------------------- comilla-donation ------------------->
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
-          <img src="./images/cumilla.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <img src="./images/cumilla.png" class="lg:max-w-sm max-w-xs rounded-lg shadow-xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
                 alt="" class="w-6 rounded-full bg-black">
@@ -195,7 +193,7 @@
       <!-------------------- Feni-donation ------------------->
       <div class="hero">
         <div class="hero-content flex-col lg:flex-row border-2 border-solid mb-5">
-          <img src="./images/feni.png" class="max-w-sm rounded-lg shadow-2xl" />
+          <img src="./images/feni.png" class="lg:max-w-sm max-w-xs rounded-lg shadow-xl" />
           <div>
             <div class="btn m-3 fontLexend font-semibold text-base w-44 bg-gray-200"> <img src="./images/coin.png"
                 alt="" class="w-6 rounded-full bg-black">

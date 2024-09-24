@@ -26,8 +26,6 @@
                     colors: {
                         primaryColor: '#B4F461',
                         navBgcolor: '#F9F7F3',
-                        secondaryColor: '',
-
                     },
                     fontFamily: {
                         fontLexend: 'Lexend',
@@ -48,7 +46,7 @@
                     class="btn bg-primaryColor fontLexend font-semibold text-xl w-36">Blog</button>
             </div>
 
-            <div class="">
+            <div class="hidden lg:flex">
                 <img src="./images/logo.png" alt="" class="w-10 rounded-full bg-black">
                 <a class="fontLexend m-3 text-lg font-semibold">BeaconDonors</a>
             </div>
@@ -61,13 +59,16 @@
     </header>
 
     <main>
-        <h1 class="font-bold text-5xl m-10">Important FAQ</h1>
-        <div class="FAQ-section m-10">
-            <div class="collapse collapse-arrow bg-base-200">
+        <!-------------------- FAQ----------- -->
+        <h1 class="font-bold text-5xl lg:mt-8 lg:ms-20 fontLexend text-center m-10">Important FAQ <i class="fa-solid fa-question fa-spin"></i>
+        </h1>
+        <div class="FAQ-section lg:m-10 m-6">
+            <div class="collapse collapse-arrow bg-base-200 lg:m-5 p-5 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
-                <div class="collapse-content">
-                    <p>>For HTML and XML documents, the DOM is a programming API. It determines document access and
+                <div class="collapse-title fontLexend text-xl font-bold">What is the Document Object Model(DOM)?
+                </div>
+                <div class="collapse-content fontLexend">
+                    <p>For HTML and XML documents, the DOM is a programming API. It determines document access and
                         manipulation and their logical structure. The DOM definition uses "document" in the broad
                         sense XML is increasingly used to represent numerous types of information that may be kept in
                         multiple systems, much of which would traditionally be considered data rather than documents.
@@ -77,10 +78,11 @@
                         an HTML or XML document.</p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200">
+            <div class="collapse collapse-arrow bg-base-200 lg:m-5 p-5 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-                <div class="collapse-content">
+                <div class="collapse-title fontLexend text-xl font-bold">How do you select an element from the DOM?
+                </div>
+                <div class="collapse-content fontLexend">
                     <p>Many JavaScript methods pick DOM items. You can select an element by ID with getElementById. This
                         function returns the element object if it finds an element with the ID, null otherwise. You can
                         choose elements by class name using getElementsByClassName. All document items with the supplied
@@ -91,11 +93,12 @@
                     </p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200">
+            <div class="collapse collapse-arrow bg-base-200 lg:m-5 p-5 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                <div class="collapse-title fontLexend text-xl font-bold">What is event delegation in the context of
+                    the DOM, and
                     why is it useful?</div>
-                <div class="collapse-content">
+                <div class="collapse-content fontLexend">
                     <p>The DOM uses event delegation to handle events at a higher level than attaching event listeners
                         to elements. In event bubbling, a child element's event "bubbles" up to its parent. A parent
                         element can have one event listener instead of one for each child element. If any child element
@@ -105,11 +108,12 @@
                             can interrupt bubbling using event.stopPropagation().</p>
                 </div>
             </div>
-            <div class="collapse collapse-arrow bg-base-200">
+            <div class="collapse collapse-arrow bg-base-200 lg:m-5 p-5 mt-5">
                 <input type="radio" name="my-accordion-2" />
-                <div class="collapse-title text-xl font-medium">How do you manipulate an element's and styles using DOM?
+                <div class="collapse-title fontLexend text-xl font-bold">How do you manipulate an element's and
+                    styles using DOM?
                 </div>
-                <div class="collapse-content">
+                <div class="collapse-conten fontLexendt">
                     <p>We can manipulate DOM elements using JavaScript methods and properties after selecting them. Some
                         examples: Get or set DOM element text content with the textContent attribute. Get or set DOM
                         element HTML content with the innerHTML attribute. The setAttribute method sets an element's
@@ -120,4 +124,11 @@
         </div>
     </main>
 </body>
+
+<footer>
+    <div class="bg-navBgcolor p-14 mt-10">
+    </div>
+</footer>
+
+<!----------------- js file =====-->
 <script src="js/blog.js"></script>
