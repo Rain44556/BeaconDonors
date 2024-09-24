@@ -42,3 +42,11 @@ addClickListener('btn-quota-injured', 'quota-injured-donation-input', 'quota-inj
 addClickListener('btn-noakhali', 'noakhali-donation-input', 'noakhali-donation-addMoney', 'title-noakhali');
 addClickListener('btn-comilla', 'comilla-donation-input', 'comilla-donation-addMoney', 'title-comilla');
 addClickListener('btn-feni', 'feni-donation-input', 'feni-donation-addMoney', 'title-feni');
+
+
+
+// -----------------------------go to blog page--------------------------
+document.getElementById('btn-blog-page').addEventListener('click', function(){
+    console.log(window.location.href);
+            window.location.href = './blog.html';
+          });

@@ -1,11 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BeaconDonors</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/206afff65d.js" crossorigin="anonymous"></script>
+
+    <!-- daisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryColor: '#B4F461',
+                        navBgcolor: '#F9F7F3',
+                        secondaryColor: '',
+
+                    },
+                    fontFamily: {
+                        fontLexend: 'Lexend',
+                    },
+
+                }
+            }
+        }
+    </script>
 </head>
+
 <body>
-    
+    <!---------------------------------------- navbar ------------------------------------>
+    <header class="sticky top-0 z-50 backdrop-blur">
+        <div class="navbar bg-navBgcolor p-6">
+            <div class="lg:flex navbar-start">
+                <button id="btn-back-index-page"
+                    class="btn bg-primaryColor fontLexend font-semibold text-xl w-36">Blog</button>
+            </div>
+
+            <div class="">
+                <img src="./images/logo.png" alt="" class="w-10 rounded-full bg-black">
+                <a class="fontLexend m-3 text-lg font-semibold">BeaconDonors</a>
+            </div>
+
+            <div class="navbar-end fontLexend text-xl font-semibold">
+                <img src="./images/coin.png" alt="" class="w-7 rounded-full bg-black">
+                <div id="main-balance" class=" m-2 ">7200</div> BDT</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="font-bold text-5xl m-10">Important FAQ</h1>
+        <div class="FAQ-section m-10">
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                <div class="collapse-content">
+                    <p>>For HTML and XML documents, the DOM is a programming API. It determines document access and
+                        manipulation and their logical structure. The DOM definition uses "document" in the broad
+                        sense XML is increasingly used to represent numerous types of information that may be kept in
+                        multiple systems, much of which would traditionally be considered data rather than documents.
+                        XML documents this data, and the DOM can manage it. Programmers can build, navigate, and add,
+                        alter, or delete documents using the Document Object Model. Except for the internal and external
+                        subset DOM interfaces, the Document Object Model can access, alter, delete, and add anything in
+                        an HTML or XML document.</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>Many JavaScript methods pick DOM items. You can select an element by ID with getElementById. This
+                        function returns the element object if it finds an element with the ID, null otherwise. You can
+                        choose elements by class name using getElementsByClassName. All document items with the supplied
+                        class name are returned. Select elements by tag name with getElementsByTagName. All document
+                        elements with the supplied tag name are returned. This technique selects the first element that
+                        matches a CSS selector(s) in the document. Use querySelectorAll to pick all document components
+                        matching a CSS selector(s).
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>The DOM uses event delegation to handle events at a higher level than attaching event listeners
+                        to elements. In event bubbling, a child element's event "bubbles" up to its parent. A parent
+                        element can have one event listener instead of one for each child element. If any child element
+                        triggers an event, the parent can handle it. Event delegation improves performance and adapts to
+                        changes. Events are delegated by event bubbling, which begins at the target element and
+                        propagates through parent elements to the root of the DOM (typically <html> or <document>). We
+                            can interrupt bubbling using event.stopPropagation().</p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's and styles using DOM?
+                </div>
+                <div class="collapse-content">
+                    <p>We can manipulate DOM elements using JavaScript methods and properties after selecting them. Some
+                        examples: Get or set DOM element text content with the textContent attribute. Get or set DOM
+                        element HTML content with the innerHTML attribute. The setAttribute method sets an element's
+                        attribute value. The classList property adds, removes, and toggles DOM element CSS classes. You
+                        can acquire or set DOM element inline styles with the style property.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
-</html>
+<script src="js/blog.js"></script>
